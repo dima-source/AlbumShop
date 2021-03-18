@@ -1,0 +1,20 @@
+﻿@using AlbumShop.ViewModels
+@model AlbumsListViewModel
+
+
+    <h2>All albums</h2>
+    <h2>@Model.AlbumCategory</h2>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (var album in Model.GetAllAlbums)
+            {
+                <div class="col-lg-4">
+                    <img class="img-thumbnail" src="@album.IMG" alt="@album.Name" />
+                    <h2>Название: @album.Name</h2>
+                    <p>Группа: @album.Group</p>
+                    <p>Цена: @album.Price.ToString("c")</p>
+                    <p><a class="btn btn-warning" href="#">Подробнее</a></p>
+                </div>
+            }
+        }
+    <div>
