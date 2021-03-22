@@ -9,7 +9,7 @@ namespace AlbumShop.Data.Interfaces
     public interface IAllAlbums
     {
         IEnumerable<Album> Albums { get; }
-        IEnumerable<Album> GetFavAlbums { get; set; }
+        IEnumerable<Album> GetFavAlbums { get; }
         Album GetObjectAlbum(int AlbumId); 
     }
 }
