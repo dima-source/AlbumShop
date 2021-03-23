@@ -172,3 +172,4 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\staticwebassets\AlbumShop.Stat
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.dll
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.pdb
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.genruntimeconfig.cache
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllAlbums.cshtml.g.cs

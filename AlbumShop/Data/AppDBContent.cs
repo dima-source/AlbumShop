@@ -15,5 +15,6 @@ namespace AlbumShop.Data
         }
         public DbSet<Album> Album { get; set; }
         public DbSet<Category> Category { get; set; }
+        public DbSet<ShopCartItem> ShopCartItem { get; set; }
     }
 }
