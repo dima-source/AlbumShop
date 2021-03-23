@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LuFPEfTvu6jtptw2CmcrcCVEb8hGM22B50g3MeO8gIaSAauIHNWzaf+cKZt1T3N/aTfPwfdl7nEhLVegN+ePYA==",
+  "dgSpecHash": "FZKNzjaTgXVoWv0ZfzWqQ5cpI9yxnYJ9S1ULaTC+AMohaGwuw4Yfd/o3dS2fhAzHd5GweRqnREZa8EsOo0LxHQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Project\\AlbumShop\\AlbumShop.csproj",
+  "projectFilePath": "D:\\Projects\\GIT\\AlbumShop\\AlbumShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\json\\1.0.1\\json.1.0.1.nupkg.sha512",

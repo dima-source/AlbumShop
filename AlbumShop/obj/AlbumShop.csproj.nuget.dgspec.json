@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Project\\AlbumShop\\AlbumShop.csproj": {}
+    "D:\\Projects\\GIT\\AlbumShop\\AlbumShop.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Project\\AlbumShop\\AlbumShop.csproj": {
+    "D:\\Projects\\GIT\\AlbumShop\\AlbumShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Project\\AlbumShop\\AlbumShop.csproj",
+        "projectUniqueName": "D:\\Projects\\GIT\\AlbumShop\\AlbumShop.csproj",
         "projectName": "AlbumShop",
-        "projectPath": "D:\\Projects\\Project\\AlbumShop\\AlbumShop.csproj",
+        "projectPath": "D:\\Projects\\GIT\\AlbumShop\\AlbumShop.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Project\\AlbumShop\\obj\\",
+        "outputPath": "D:\\Projects\\GIT\\AlbumShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
