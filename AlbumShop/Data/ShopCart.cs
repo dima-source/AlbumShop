@@ -1,5 +1,6 @@
 ﻿using AlbumShop.Data.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace AlbumShop.Data
             session.SetString("CartId", shopCartId);
             return new ShopCart(context) { ShopCartId = shopCartId };
         }
-        public void AddToCart(Album album, int amount)
+        public void AddToCart(Album album)
         {
             appDBContent.ShopCartItem.Add(new ShopCartItem {
                 ShopCartId = ShopCartId,
@@ -33,6 +34,10 @@ namespace AlbumShop.Data
                 price = album.Price
             });
             appDBContent.SaveChanges();
+        }
+        public List<ShopCartItem> getShopItems()
+        {
+            return appDBContent.ShopCartItem.Where(c => c.ShopCartId == ShopCartId).Include(s => s.album).ToList();
         }
     }
 }

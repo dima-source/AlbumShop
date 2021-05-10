@@ -152,8 +152,6 @@ D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.csprojAssemblyReference.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.AssemblyInfoInputs.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.AssemblyInfo.cs
-D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.csproj.CoreCompileInputs.cache
-D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.RazorAssemblyInfo.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.RazorAssemblyInfo.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.TagHelpers.input.cache
@@ -173,3 +171,6 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.dll
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.pdb
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.genruntimeconfig.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllAlbums.cshtml.g.cs
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.csproj.CoreCompileInputs.cache
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
