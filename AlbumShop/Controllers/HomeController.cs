@@ -1,4 +1,5 @@
 ﻿using AlbumShop.Data.Interfaces;
+using AlbumShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,11 @@ namespace AlbumShop.Controllers
         }
         public ViewResult Index()
         {
-            return View();
+            var homeAlbums = new HomeViewModel
+            {
+                favAlbums = _albumRep.GetFavAlbums
+            };
+            return View(homeAlbums);
         }
     }
 }
