@@ -58,7 +58,7 @@ namespace AlbumShop.Data
                         Group = "BTS",
                         CountTrack = 26,
                         Available = true,
-                        Category = Categories["K-POP"]
+                        Category = Categories["Рок"]
                     },
                     new Album
                     {
