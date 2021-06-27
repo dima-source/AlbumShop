@@ -1,4 +1,14 @@
-﻿
-@model HomeViewModel
+﻿@model HomeViewModel
 
+
+
+<h2>Главные альбомы</h2>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Album album in Model.favAlbums)
+        {
+            @Html.Partial("AllAlbums", album)
+        }
+    }
+<div>
 
