@@ -1,15 +1,13 @@
-﻿@using AlbumShop.ViewModels
-@using AlbumShop.Data.Models
-@model AlbumsListViewModel
+﻿@using AlbumShop.Data.Models
+<h1>Все машины</h1>
+<h3>@Model.currCategory</h3>
 
 
-    <h2>All albums</h2>
-    <h2>@Model.AlbumCategory</h2>
-    <div class="row mt-5 mb-2">
-        @{
-            foreach (Album album in Model.GetAllAlbums)
-            {
-                @Html.Partial("AllAlbums", album)
-            }
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Album album in Model.GetAllAlbums)
+        {
+            @Html.Partial("AllAlbums", album)
         }
-    <div>
+    }
+</div>

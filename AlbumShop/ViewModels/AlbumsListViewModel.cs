@@ -9,6 +9,6 @@ namespace AlbumShop.ViewModels
     public class AlbumsListViewModel
     {
         public IEnumerable<Album> GetAllAlbums { get; set; }
-        public string AlbumCategory { get; set; }
+        public string currCategory { get; set; }
     }
 }

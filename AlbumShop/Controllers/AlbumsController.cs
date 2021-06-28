@@ -13,7 +13,10 @@ namespace AlbumShop.Controllers
     {
         private readonly IAllAlbums _allAlbums;
         private readonly IAlbumCategory _allCategories;
-         
+
+
+
+
         public AlbumsController(IAllAlbums iAllAlbums, IAlbumCategory ialbumCat)
         {
             _allAlbums = iAllAlbums;
@@ -21,6 +24,7 @@ namespace AlbumShop.Controllers
         }
         [Route("Albums/List")]
         [Route("Albums/List/{category}")]
+
         public ViewResult List(string category)
         {
             string _category = category;
@@ -36,22 +40,24 @@ namespace AlbumShop.Controllers
                 if (string.Equals("K-POP", category, StringComparison.OrdinalIgnoreCase))
                 {
                     albums = _allAlbums.Albums.Where(i => i.Category.CategoryName.Equals("K-POP")).OrderBy(i => i.Id);
+                    currCategory = "K-POP";
 
                 }
                 else
                 {
                     albums = _allAlbums.Albums.Where(i => i.Category.CategoryName.Equals("Рок")).OrderBy(i => i.Id);
+                    currCategory = "Рок";
                 }
-                currCategory = _category;
-               
+                
+
             }
             var albumObj = new AlbumsListViewModel
             {
                 GetAllAlbums = albums,
-                AlbumCategory = currCategory
+                currCategory = currCategory
             };
             ViewBag.Title = "Страница с альбомами";
-           
+
 
             return View(albumObj);
         }
