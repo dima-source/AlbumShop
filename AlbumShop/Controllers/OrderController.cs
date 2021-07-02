@@ -17,5 +17,10 @@ namespace AlbumShop.Controllers
             this.allOrders = allOrders;
             this.shopCart = shopCart;
         }
+
+        public IActionResult Checkout()
+        {
+            return View();
+        }
     }
 }
