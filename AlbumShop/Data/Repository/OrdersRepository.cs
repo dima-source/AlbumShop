@@ -1,11 +1,28 @@
-﻿using System;
+﻿using AlbumShop.Data.Interfaces;
+using AlbumShop.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace AlbumShop.Data.Repository
 {
-    public class OrdersRepository
+    public class OrdersRepository : IAllOrders
     {
+        private readonly AppDBContent appDBContent;
+        private readonly ShopCart shopCart;
+        public OrdersRepository(AppDBContent appDBContent, ShopCart shopCart)
+        {
+            this.appDBContent = appDBContent;
+            this.shopCart = shopCart;
+        }
+       
+        public void createOrder(Order order)
+        {
+            order.OrderTime = DateTime.Now;
+            appDBContent.Order.Add(order);
+
+            var items = shopCart.listShopItems;
+        }
     }
 }
