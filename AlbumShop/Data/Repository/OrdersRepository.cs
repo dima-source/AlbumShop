@@ -23,6 +23,18 @@ namespace AlbumShop.Data.Repository
             appDBContent.Order.Add(order);
 
             var items = shopCart.listShopItems;
+
+            foreach(var el in items)
+            {
+                var orderDetail = new OrderDetail()
+                {
+                    AlbumId = el.album.Id,
+                    OrderId = order.Id,
+                    Price = el.album.Price
+                };
+                appDBContent.OrderDetail.Add(orderDetail);
+            }
+            appDBContent.SaveChanges();
         }
     }
 }
