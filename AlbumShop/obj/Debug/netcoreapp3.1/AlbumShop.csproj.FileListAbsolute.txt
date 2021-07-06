@@ -176,3 +176,4 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.MvcApplicationPartsA
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.cshtml.g.cs

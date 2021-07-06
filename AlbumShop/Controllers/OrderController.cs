@@ -1,5 +1,6 @@
 ﻿using AlbumShop.Data;
 using AlbumShop.Data.Interfaces;
+using AlbumShop.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,27 @@ namespace AlbumShop.Controllers
 
         public IActionResult Checkout()
         {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Checkout(Order order)
+        {
+            shopCart.listShopItems = shopCart.getShopItems();
+            if (shopCart.listShopItems.Count == 0)
+            {
+                ModelState.AddModelError("","У вас должны быть товары");
+            }
+            if (ModelState.IsValid)
+            {
+                allOrders.createOrder(order);
+                return RedirectToAction("Complete");
+            }
+            return View(order);
+
+        }
+        public IActionResult Complete()
+        {
+            ViewBag.Messege = "Заказ успешно обработан";
             return View();
         }
     }

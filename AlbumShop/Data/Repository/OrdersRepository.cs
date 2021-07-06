@@ -21,7 +21,7 @@ namespace AlbumShop.Data.Repository
         {
             order.OrderTime = DateTime.Now;
             appDBContent.Order.Add(order);
-
+            appDBContent.SaveChanges();
             var items = shopCart.listShopItems;
 
             foreach(var el in items)
