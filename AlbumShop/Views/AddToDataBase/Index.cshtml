@@ -1,0 +1,73 @@
+﻿@*@model AlbumShop.ViewModels.AddToDataBaseViewModel
+
+@{ 
+   Layout = "_Layout";
+   ViewData["Title"] = "Добавление товара в базу данных"; 
+}
+
+<h3>Добавить товар</h3>
+<div class="row p-5">
+    <form asp-action="Index" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="Album.Name"></label>
+            <div class="col-12">
+                <input asp-for="Album.Name" class="form-control" />
+                <span asp-validation-for="Album.Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.IMG"></label>
+            <div class="col-12">
+                <input asp-for="Album.IMG" class="form-control" />
+                <span asp-validation-for="Album.IMG" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.Group"></label>
+            <div class="col-12">
+                <input asp-for="Album.Group" class="form-control" />
+                <span asp-validation-for="Album.Group" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.CountTrack"></label>
+            <div class="col-12">
+                <input asp-for="Album.CountTrack" class="form-control" />
+                <span asp-validation-for="Album.CountTrack" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.Price"></label>
+            <div class="col-12">
+                <input asp-for="Album.Price" class="form-control" />
+                <span asp-validation-for="Album.Price" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.Count"></label>
+            <div class="col-12">
+                <input asp-for="Album.Count" class="form-control" />
+                <span asp-validation-for="Album.Count" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Album.ShortDesc"></label>
+            <div class="col-12">
+                <input asp-for="Album.ShortDesc" class="form-control" />
+                <span asp-validation-for="Album.ShortDesc" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.Category"></label>
+            <div class="col-12">
+                <select asp-for="Album.Category">
+                    @{ foreach (var item in Model.Categories)
+                        {
+            <option value="@item.CategoryName">@item.CategoryName</option> } }
+                </select>
+            </div>
+        </div>
+        <input class="btn btn-success" type="submit" value="Добавить Товар" />
+    </form>
+</div>*@
