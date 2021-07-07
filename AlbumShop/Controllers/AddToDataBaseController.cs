@@ -38,7 +38,15 @@ namespace AlbumShop.Controllers
 		[HttpPost]
 		public RedirectToActionResult Index(Album album)
 		{
-			var category = dBContext.Category.FirstOrDefault(cat => cat.CategoryName == album.Category.CategoryName);
+            if (album.Category.CategoryName == "Рок")
+            {
+
+            }
+            else
+            {
+
+            }
+			var category = dBContext.Category.FirstOrDefault(cat => cat.CategoryName.Equals("Рок"));
 			album.CategoryId = category.Id;
 			album.Category = category;
 			dBContext.Album.Add(album);

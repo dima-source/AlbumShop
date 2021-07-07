@@ -1,4 +1,4 @@
-﻿@*@model AlbumShop.ViewModels.AddToDataBaseViewModel
+﻿@model AlbumShop.ViewModels.AddToDataBaseViewModel
 
 @{ 
    Layout = "_Layout";
@@ -43,13 +43,13 @@
                 <span asp-validation-for="Album.Price" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
+        @*<div class="form-group">
             <label asp-for="Album.Count"></label>
             <div class="col-12">
                 <input asp-for="Album.Count" class="form-control" />
                 <span asp-validation-for="Album.Count" class="text-danger"></span>
             </div>
-        </div>
+        </div>*@
 
         <div class="form-group">
             <label asp-for="Album.ShortDesc"></label>
@@ -70,4 +70,4 @@
         </div>
         <input class="btn btn-success" type="submit" value="Добавить Товар" />
     </form>
-</div>*@
+</div>
