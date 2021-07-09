@@ -179,3 +179,4 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.csh
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\AddToDataBase\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\AddToDataBase\Categories.cshtml.g.cs
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Staff\ListStaff.cshtml.g.cs

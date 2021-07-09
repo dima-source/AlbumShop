@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlbumShop.Data.Interfaces
 {
-    interface IAllStaff
+    public interface IAllStaff
     {
         IEnumerable<Staff> Staffs {get;set;}
         Staff GetObjStaff(int Id);

@@ -1,0 +1,13 @@
+﻿@using AlbumShop.Data.Models
+<h1>Все сотрудники</h1>
+<h3>@Model.currStaff</h3>
+
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Staff staff in Model.GetAllStaffs)
+        {
+            @Html.Partial("AllStaff", staff)
+        }
+    }
+</div>

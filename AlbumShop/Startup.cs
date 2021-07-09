@@ -31,6 +31,7 @@ namespace AlbumShop
             services.AddTransient<IAllAlbums, AlbumRepository>();
             services.AddTransient<IAlbumCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
+            services.AddTransient<IAllStaff, MockStaff>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShopCart.GetCart(sp));
 
