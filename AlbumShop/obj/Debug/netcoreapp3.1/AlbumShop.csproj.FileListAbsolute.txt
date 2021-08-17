@@ -171,8 +171,6 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.dll
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.pdb
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.genruntimeconfig.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllAlbums.cshtml.g.cs
-D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.csproj.CoreCompileInputs.cache
-D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
@@ -180,3 +178,11 @@ D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.csh
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\AddToDataBase\Index.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\AddToDataBase\Categories.cshtml.g.cs
 D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\Razor\Views\Staff\List.cshtml.g.cs
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\libman.json
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Projects\GIT\AlbumShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.csproj.CoreCompileInputs.cache
+D:\Projects\GIT\AlbumShop\obj\Debug\netcoreapp3.1\AlbumShop.MvcApplicationPartsAssemblyInfo.cache

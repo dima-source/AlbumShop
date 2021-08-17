@@ -34,7 +34,7 @@ namespace AlbumShop
             services.AddTransient<IAllStaff, MockStaff>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShopCart.GetCart(sp));
-
+            services.AddSignalR();
             services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddMemoryCache();
@@ -49,6 +49,13 @@ namespace AlbumShop
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Chat}/{action=Index}");
+            //    endpoints.MapHub<ChatHub>("/chat");
+            //});
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {
