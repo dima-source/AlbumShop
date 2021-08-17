@@ -19,7 +19,7 @@ namespace AlbumShop.Controllers
             _allStaffs = iAllStaffs;
 
         }
-        [Route("Staff/ListStaff")]
+       // [Route("Staff/ListStaff")]
         
 
         public ViewResult List(string category)

@@ -54,6 +54,7 @@ namespace AlbumShop
             {
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(name: "categoryFilter", template: "Album/{action}/{category?}", defaults: new { Controller = "Album", action = "List" });
+                //routes.MapRoute(name: "Staff", template: "Staff/{action}/{category?}", defaults: new { Controller = "Staff", action = "List" });
             });
 
             using (var scope = app.ApplicationServices.CreateScope())
