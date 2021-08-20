@@ -11,8 +11,8 @@ namespace AlbumShop.Data
 {
     public class ShopCart
     {
-        private readonly AppDBContent appDBContent; 
-        public ShopCart(AppDBContent appDBContent)
+        private readonly ApplicationContext appDBContent; 
+        public ShopCart(ApplicationContext appDBContent)
         {
             this.appDBContent = appDBContent;
         }
@@ -21,7 +21,7 @@ namespace AlbumShop.Data
         public static ShopCart GetCart(IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
-            var context = services.GetService<AppDBContent>();
+            var context = services.GetService<ApplicationContext>();
             string shopCartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
             session.SetString("CartId", shopCartId);
             return new ShopCart(context) { ShopCartId = shopCartId };

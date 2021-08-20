@@ -9,9 +9,9 @@ namespace AlbumShop.Data.Repository
 {
     public class OrdersRepository : IAllOrders
     {
-        private readonly AppDBContent appDBContent;
+        private readonly ApplicationContext appDBContent;
         private readonly ShopCart shopCart;
-        public OrdersRepository(AppDBContent appDBContent, ShopCart shopCart)
+        public OrdersRepository(ApplicationContext appDBContent, ShopCart shopCart)
         {
             this.appDBContent = appDBContent;
             this.shopCart = shopCart;

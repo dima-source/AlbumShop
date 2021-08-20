@@ -11,9 +11,9 @@ namespace AlbumShop.Controllers
 {
     public class AddToDataBaseController : Controller
     {
-		AppDBContent dBContext;
+		ApplicationContext dBContext;
 		ShopCart shopCart;
-		public AddToDataBaseController(AppDBContent dBContext, ShopCart shopCart)
+		public AddToDataBaseController(ApplicationContext dBContext, ShopCart shopCart)
 		{
 			this.dBContext = dBContext;
 			this.shopCart = shopCart;
@@ -38,14 +38,14 @@ namespace AlbumShop.Controllers
 		[HttpPost]
 		public RedirectToActionResult Index(Album album)
 		{
-            if (album.Category.CategoryName == "Рок")
-            {
+            //if (album.Category.CategoryName == "Рок")
+            //{
 
-            }
-            else
-            {
+            //}
+            //else
+            //{
 
-            }
+            //}
 			var category = dBContext.Category.FirstOrDefault(cat => cat.CategoryName.Equals("Рок"));
 			album.CategoryId = category.Id;
 			album.Category = category;

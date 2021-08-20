@@ -2,4 +2,4 @@
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=AlbumShop;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
-}
+} 

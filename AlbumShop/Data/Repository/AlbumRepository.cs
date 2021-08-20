@@ -10,8 +10,8 @@ namespace AlbumShop.Data.Repository
 {
     public class AlbumRepository : IAllAlbums
     {
-        private readonly AppDBContent appDBContent;
-        public AlbumRepository(AppDBContent appDBContent)
+        private readonly ApplicationContext appDBContent;
+        public AlbumRepository(ApplicationContext appDBContent)
         {
             this.appDBContent = appDBContent;
         }

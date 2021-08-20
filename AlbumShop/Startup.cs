@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using AlbumShop.Data;
 using AlbumShop.Data.Interfaces;
 using AlbumShop.Data.Mock;
+using AlbumShop.Data.Models;
 using AlbumShop.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,7 +29,9 @@ namespace AlbumShop
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<User, IdentityRole>()
+            .AddEntityFrameworkStores<ApplicationContext>();
             services.AddTransient<IAllAlbums, AlbumRepository>();
             services.AddTransient<IAlbumCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
@@ -66,7 +70,7 @@ namespace AlbumShop
 
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+                ApplicationContext content = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
                 DBObjects.Initial(content);
             }
 

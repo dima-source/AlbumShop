@@ -10,7 +10,7 @@ namespace AlbumShop.Data
 {
     public class DBObjects
     {
-        public static void Initial(AppDBContent content)
+        public static void Initial(ApplicationContext content)
         {
             
            

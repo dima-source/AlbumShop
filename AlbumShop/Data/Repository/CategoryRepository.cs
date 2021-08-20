@@ -9,8 +9,8 @@ namespace AlbumShop.Data.Repository
 {
     public class CategoryRepository : IAlbumCategory
     {
-        private readonly AppDBContent appDBContent;
-        public CategoryRepository(AppDBContent appDBContent)
+        private readonly ApplicationContext appDBContent;
+        public CategoryRepository(ApplicationContext appDBContent)
         {
             this.appDBContent = appDBContent;
         }

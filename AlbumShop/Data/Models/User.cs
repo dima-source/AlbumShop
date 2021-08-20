@@ -8,6 +8,7 @@ namespace AlbumShop.Data.Models
 {
     public class User : IdentityUser
     {
-        public int Year { get; set; }
+        public string Name { get; set; }
+       
     }
 }
